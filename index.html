@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#07080a" />
+<title>AI 这四年 · 口播稿</title>
+<meta name="description" content="10 段口播文案：AI 四年发展史，创作者视角。" />
+<meta property="og:title" content="AI 这四年 · 口播稿" />
+<meta property="og:description" content="10 段口播文案：AI 四年发展史，创作者视角。" />
+<meta property="og:type" content="website" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="brand"><span class="dot" aria-hidden="true"></span>AI 四年 · 口播稿</div>
+  <div class="topbar-right">
+    <span class="ver" id="ver">v1.0</span>
+    <button class="ghost" id="copyLink" type="button">复制链接</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="kicker" id="kicker"></p>
+    <h1 class="title" id="title"></h1>
+    <p class="subtitle" id="subtitle"></p>
+    <div class="stats" id="stats"></div>
+    <div class="threads" id="threads"></div>
+  </section>
+
+  <section class="timeline" id="timeline" aria-label="口播文案"></section>
+
+  <section class="actions">
+    <button class="primary" id="copyAll" type="button">一键复制全稿</button>
+    <button class="ghost wide" id="shareBtn" type="button">分享此页</button>
+  </section>
+
+  <footer>
+    <p class="note" id="footerNote"></p>
+    <p class="meta"><span id="verFoot"></span> · 更新于 <span id="updated"></span></p>
+  </footer>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
